@@ -1,10 +1,61 @@
 /********************
  * YOUR CODE BELOW! *
  ********************/
+function moreThan5(num){
+  return num>5;
+}
 
+function topScore(score, topScore){
+  return score>topScore;
+}
 
+function isInDanger(grade){
+  return grade>=60 && grade<=71;
+}
 
+function isCoasting(grade){
+  return grade>=72 && grade<=83;
+}
 
+function isSucceeding(grade){
+  return grade>=84 && grade<=92;
+}
+
+function isFailing(grade){
+  return grade<60;
+}
+
+function isAcing(grade){
+  return grade>92;
+}
+
+function isStudent(role){
+  return role==='student';
+}
+
+function isTeacher(role){
+  return role==='teacher';
+}
+
+function isAdmin(role){
+  return role==='admin';
+}
+
+function isElementary(level){
+  return level==='elementary';
+}
+
+function areDifferentPeople(name1,name2){
+ return name1!==name2;
+}
+
+function isMiddleSchoolTeacher(role, num){
+  return role==='teacher' && (num>=6 && num<=8);
+}
+
+function notAnElementarySchoolAdministrator(level, role){
+  return level!=='elementary' || role!=='admin';
+}
 
 /********************************************************************************************
  * CODE BELOW IS FOR EXPORTING THE VARIABLES AND FUNCTIONS YOU WROTE ABOVE TO MAIN.TEST.JS. *
@@ -57,8 +108,8 @@ if (typeof isElementary === 'undefined') {
   isElementary = undefined;
 }
 
-if (typeof differentPeople === 'undefined') {
-  differentPeople = undefined;
+if (typeof areDifferentPeople === 'undefined') {
+  areDifferentPeople = undefined;
 }
 
 if (typeof notAnElementarySchoolAdministrator === 'undefined') {
@@ -82,7 +133,7 @@ module.exports = {
   isTeacher,
   isAdmin,
   isElementary,
-  differentPeople,
+  areDifferentPeople,
   notAnElementarySchoolAdministrator,
   isMiddleSchoolTeacher,
 }
